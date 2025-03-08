@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+    <div class="player-container">
+        <div class="toggle-menu" id="toggle-menu">🎵</div>
+        <div class="playlist" id="playlist"></div>
+        <img id="cover" src="https://source.unsplash.com/150x150/?music,singer" alt="Cover">
+        <p class="song-title" id="song-title">Song Title</p>
+        <p class="song-artist" id="song-artist">Artist Name</p>
+        <input type="range" class="progress-bar" id="progress-bar" value="0" max="100">
+        <div class="controls">
+            <button class="control-btn" id="prev">⏮</button>
+            <button class="control-btn play" id="play-pause">▶</button>
+            <button class="control-btn" id="next">⏭</button>
+        </div>
+    </div>
+
+    <audio id="audio"></audio>
+
+   <script src="script.js"></script>
+
+</body>
+</html>
